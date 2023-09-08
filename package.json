@@ -1,0 +1,8 @@
+{
+  "name": "logica-de-programacao-ruby",
+  "version": "1.0.0",
+  "description": "Estudando lógica de programação em Ruby ",
+  "main": "index.js",
+  "author": {"name":"Giulyano"},
+  "license": "MIT"
+}
