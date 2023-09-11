@@ -23,7 +23,7 @@ def verifica_passou(aluno)
   if nota_aluno > 5 
     puts "Parábens #{nome_aluno}, passou de ano!"
   else 
-    puts "Que pena! #{nome_aluno}, Ficou de recuperação!"
+    puts "Que pena! #{nome_aluno},  Ficou de recuperação!"
   end
  
 end
