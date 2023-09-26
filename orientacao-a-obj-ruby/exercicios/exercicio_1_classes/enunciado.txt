@@ -1,0 +1,2 @@
+Crie as outras duas classes do nosso exemplo. O professor deve ter um nome e um código de funcionário. Já a turma deve ter nome, o número da sala e o professor responsável. Cada classe deve ser criada em um arquivo diferente: professor.rb e turma.rb.
+

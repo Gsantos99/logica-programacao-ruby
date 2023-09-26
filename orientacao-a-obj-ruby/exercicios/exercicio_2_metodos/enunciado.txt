@@ -1,0 +1,4 @@
+Criamos o método inicia_ferias e agora você pode criar o método encerra_ferias. Mas além de alterar o valor do atributo @ferias, vamos criar dois novos atributos: @data_inicio_ferias e @data_fim_ferias. Esses dois atributos devem ser atualizados nos métodos inicia_ferias e encerra_ferias.
+
+Uma das formas de obter a data atual em Ruby é usar a classe Time. O método Time.now() retorna o dia e hora atual do seu computador.
+

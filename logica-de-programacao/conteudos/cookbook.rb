@@ -1,3 +1,9 @@
+# Constantes 
+INSERIR_RECEITA = 1 
+VISUALIZAR_RECEITA = 2
+VER_TODAS_RECEITAS = 3
+SAIR = 4 
+
 # Declaração de variáveis
 opcao = ''
 receitas = []
@@ -10,11 +16,12 @@ end
 def menu() 
   puts "Escolha uma opção:"
   puts "#############################################"
-  puts "[1] Cadastrar uma receita"
-  puts "[2] Ver todas as receitas"
-  puts "[3] Sair"
+  puts "#{INSERIR_RECEITA} Cadastrar uma receita"
+  puts "#{VISUALIZAR_RECEITA} Ver todas as receitas"
+  puts "#{VER_TODAS_RECEITAS} Ver todas as receitas"
+  puts "#{SAIR} Sair"
   puts "#############################################"
-  return gets().chomp()
+  return gets().to_i()
 end 
 
 def inserir_receita 
@@ -31,28 +38,35 @@ def inserir_receita
 end 
 
 def mostrar_receita(receitas) 
-  puts "========= Receitas cadastradas ========="
+   
+  if receitas.empty? 
+    puts 'Não existem receitas cadastradas!'
+
+  else 
+    puts "========= Receitas cadastradas ========="
     receitas.each do |receita| 
     puts "#{receita[:nome]} - #{receita[:tipo]}"
+    puts 
     end
-    puts
+  end   
 end 
 
-while opcao != '3' do
+while (opcao != SAIR) do
   bem_vindo()
   opcao = menu()
   
-  if opcao == '1'
-    receitas << inserir_receita() 
-
-  elsif opcao == '2' 
+  if (opcao == INSERIR_RECEITA)
+   receitas << inserir_receita()
+      
+  elsif opcao == VISUALIZAR_RECEITA
   mostrar_receita(receitas)
-
-  elsif opcao == '3' 
-    return puts 'Obrigado pelo acesso'
-  else 
-   puts "Opção inválida"
-  end 
   
+  elsif opcao == SAIR 
+  return puts 'Obrigado pelo acesso'
+  
+  else 
+    puts "Opção inválida"
+  end 
+
 end 
 

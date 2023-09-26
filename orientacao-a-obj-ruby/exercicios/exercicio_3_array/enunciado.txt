@@ -1,0 +1,2 @@
+Crie um método total_alunos que imprima a quantidade total de alunos de uma turma. Leia mais sobre sobre os métodos de arrays na documentação oficial do Ruby.
+
